@@ -1,7 +1,27 @@
 1. what's ubsan?
 2. types of ubsan
+http://chinagdg.org/2017/08/android-bug-swatting-with-sanitizers/
+bool
+integer-divide-by-zero
+return
+returns-nonnull-attribute
+shift-exponent
+unreachable
+vla-bound
+UBSan’s integer overflow checking is also used in Android’s build system. 
 
 3. ubsan under android
 - current status in O ea4(til 20170804)
 a. undefined not open in mk
-b. 
+integer,signed-integer-overflow etc. is supported.
+default-ub seems not ready.
+
+b. bp/blueprint
+All_undefined, signed-integer-overflow,diag not build correctly.
+
+
+4. how to use ubsan in android?
+a. build all by default with default-ub //todo check it out
+b. app level
+1) integer miscs in mk along with LOCAL_SANITIZE_DIAG
+2) undefined/misc_undefined &diag in bp
