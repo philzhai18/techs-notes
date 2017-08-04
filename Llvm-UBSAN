@@ -1,0 +1,7 @@
+1. what's ubsan?
+2. types of ubsan
+
+3. ubsan under android
+- current status in O ea4(til 20170804)
+a. undefined not open in mk
+b. 
