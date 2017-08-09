@@ -17,6 +17,14 @@ https://android.googlesource.com/platform/external/clang/+/dev/ToolchainPrebuilt
 http://clang.llvm.org/get_started.html
 
 a. git d/l llvm/clang/rt/etc repos
+-- git proxy .gitconfig not works properly
+-- git corkscrew
+-- git + tsocks 
+d/l from win64
+d/l release xz source file.
+tar -Jxf xxx.xz
+b. .sh update cmake to 3.8.2 //default 2.8.12.2
+c. mkdir build && cmake //libcxx should be deleted 
 
 ## AI
 
