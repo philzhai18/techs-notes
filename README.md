@@ -51,4 +51,11 @@ work around:
 https://gist.github.com/KuoE0/6620246
 build git with openssl instead
   new issues: gcc 4.9 
+7. gcc update under ubuntu 
+a. 
+https://askubuntu.com/questions/937375/upgrading-to-gcc-4-9-fails
+b. fix gpg error
+https://askubuntu.com/questions/13065/how-do-i-fix-the-gpg-error-no-pubkey
+
+
 
