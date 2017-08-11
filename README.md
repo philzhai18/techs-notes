@@ -5,6 +5,10 @@ Unclassified daily notes
 - use SANITIZE_TARGET="address undefined"  build two passes.
 - workaround webrtc so built with allow_undefined_symbols=true
 
+- asan+ubsan
+mk/go:
+add diag(no-sanitize-trap) + ubsan-runtime-lib ldflags of linkage for whole version buid.
+
 2. ubsan in kernel level
 https://www.kernel.org/doc/html/v4.10/dev-tools/ubsan.html
 
@@ -18,8 +22,9 @@ http://clang.llvm.org/get_started.html
 
 a. git d/l llvm/clang/rt/etc repos
 -- git proxy .gitconfig not works properly
--- git corkscrew
--- git + tsocks 
+-- git corkscrew   --ng
+-- git + tsocks    --ng
+-- git + openssl rebuild  --pass
 d/l from win64
 d/l release xz source file.
 tar -Jxf xxx.xz
@@ -40,4 +45,10 @@ apt-get purge git/-i git/dpkg -i gitxxx.deb
 apt proxy 
 4. >.bash_history && history -c
 5. auto mount dev -/tec/fstab
+6. git clone issues
+git http proxy fail caused by gnutls -9
+work around:
+https://gist.github.com/KuoE0/6620246
+build git with openssl instead
+  new issues: gcc 4.9 
 
