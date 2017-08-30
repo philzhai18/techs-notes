@@ -25,3 +25,5 @@ a. build all by default with default-ub //todo check it out
 b. app level
 1) integer miscs in mk along with LOCAL_SANITIZE_DIAG
 2) undefined/misc_undefined &diag in bp
+c. set SANITIZE_TARGET="address undefined"
+set diag meanwhile
