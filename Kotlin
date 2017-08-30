@@ -1,0 +1,25 @@
+1. kotlin build flow
+
+2.kotlin-native
+### build from source
+-- d/l gradle
+-- config proxy 
+-- git clone
+-- ./gradlew dependencies:update
+-- ./gradlew dist
+
+###error workaround:
+1. dl gradle zip failed
+-- fix proxy /java certs with keytool
+-- mannully dl &put to .gradle dir
+2. pom dl failed
+-- fix gradle maven url with intenal mirrors
+3. dependency dl failed
+-- dl to dist/dependency folder mannully &unnzip them
+4. deps dl error again
+-- put to .cache dir
+
+3. test konanc build
+.c -- .bc :clang 
+.kt -- .o :llvm-lto
+.o/bc -- .kexe :ld-gold with libffi.a
