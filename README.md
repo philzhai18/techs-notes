@@ -30,6 +30,23 @@ d/l release xz source file.
 tar -Jxf xxx.xz
 b. .sh update cmake to 3.8.2 //default 2.8.12.2
 c. mkdir build && cmake //libcxx should be deleted 
+### clang-static analysis
+#### clang-tidy
+1. dl extra .git repo
+2. build from source
+3. use clang-tidy
+-- ~ -check=-*,google-*
+4. extend new checkers
+-- dev workflow
+-- refs
+https://reviews.llvm.org/D31542
+http://bbannier.github.io/blog/2015/05/02/Writing-a-basic-clang-static-analysis-check.html
+https://www.kdab.com/clang-tidy-part-1-modernize-source-code-using-c11c14/
+http://clang.llvm.org/extra/clang-tidy/
+http://clang-developers.42468.n3.nabble.com/advice-with-development-on-clang-tidy-matchers-td4044012.html
+
+#### clang-SA
+#### clang warnings
 
 ## AI
 
