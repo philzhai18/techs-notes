@@ -74,5 +74,12 @@ https://askubuntu.com/questions/937375/upgrading-to-gcc-4-9-fails
 b. fix gpg error
 https://askubuntu.com/questions/13065/how-do-i-fix-the-gpg-error-no-pubkey
 
+## cmake
+### usage
+CMAKE_VERBOSE_MAKEFILE 
+
+
+## gradle
+
 
 
