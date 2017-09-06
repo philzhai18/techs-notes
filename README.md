@@ -44,9 +44,24 @@ http://bbannier.github.io/blog/2015/05/02/Writing-a-basic-clang-static-analysis-
 https://www.kdab.com/clang-tidy-part-1-modernize-source-code-using-c11c14/
 http://clang.llvm.org/extra/clang-tidy/
 http://clang-developers.42468.n3.nabble.com/advice-with-development-on-clang-tidy-matchers-td4044012.html
+5. core dumped when getdirectcallee
+ulimit -c 
+gdb tidy ./core
+where to show the callstack
+
+caused by getcallee against typedecl
+6. ast dump
+xlang -ast-dump .c
 
 #### clang-SA
 #### clang warnings
+
+### clang basics
+#### general issues
+-- clang GLIBCXX_3.4.20 not found
+update gcc( or so only) or rebuild with gcc4.8
+https://stackoverflow.com/questions/45829492/glibcxx-3-4-20-not-found
+
 
 ## AI
 
