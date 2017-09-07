@@ -49,9 +49,12 @@ ulimit -c
 gdb tidy ./core
 where to show the callstack
 
-caused by getcallee against typedecl
-6. ast dump
+caused by getcallee against typedecl.
+
+6.  ast dump
 xlang -ast-dump .c
+
+7. -resource-dir clangdir
 
 #### clang-SA
 #### clang warnings
@@ -62,6 +65,11 @@ xlang -ast-dump .c
 update gcc( or so only) or rebuild with gcc4.8
 https://stackoverflow.com/questions/45829492/glibcxx-3-4-20-not-found
 
+two fixes:
+a. update compiler to the proper version.
+rebuild the same.
+b. deploy new libstdc++ so to
+product machine for runtime load.
 
 ## AI
 
@@ -95,6 +103,9 @@ CMAKE_VERBOSE_MAKEFILE
 
 
 ## gradle
+
+## kotlin-native
+1. build from src
 
 
 
